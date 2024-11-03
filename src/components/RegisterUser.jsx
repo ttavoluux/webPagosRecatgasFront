@@ -1,6 +1,7 @@
 import { Button, TextField } from "@mui/material";
 import axios from "axios";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -46,7 +47,7 @@ function RegisterUser (){
     })
     ;
 
-        console.log("Finaliza llamdo con el servidor metodo POST!")
+        console.log("Finaliza llamado con el servidor metodo POST!")
 
     }
 
@@ -66,8 +67,10 @@ function RegisterUser (){
         <TextField  label="Password" variant="outlined" sx={{mb: 4}} fullWidth type="password" value={password} onChange={e => setPassword(e.target.value)}/>
         <TextField  label="Email" variant="outlined" sx={{mb: 4}} fullWidth type="email" value={email} onChange={e => setEmail(e.target.value)}/>
 
-        <Button variant="contained" type="submit">Create Account</Button>
+        <Button variant="contained" type="submit" href="./confirmationAccount">Create Account</Button>
         </form>
+
+        <small>Login <Link to="/">Here</Link></small>
         </>
     )
 }
