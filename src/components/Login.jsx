@@ -7,15 +7,16 @@ function Login(){
     return (
         <>
 
-        <form>
-        <h1>Login</h1>
+            <form>
+                <h1>Login</h1>
 
-        <TextField  label="UserName or Email" variant="outlined" sx={{mb: 4}} fullWidth/>
-        <TextField  label="Password" variant="outlined" type="password"sx={{mb: 4}} fullWidth/>
-        <Button variant="contained" type="submit">Login</Button>
+                <TextField label="UserName or Email" variant="outlined" sx={{mb: 4}} fullWidth/>
+                <TextField label="Password" variant="outlined" type="password" sx={{mb: 4}} fullWidth/>
+                <Button variant="contained" type="submit">Login</Button>
 
-        </form>
-        <small>Create Account <Link to="/createAccount">Here</Link></small>
+            </form>
+            <small>Create Account <Link to="/createAccount">Here</Link></small><br/>
+            <small>Apply for a scholarship <Link to="/nuevaSolicitud">Here</Link></small>
         </>
         //Hello github
     )

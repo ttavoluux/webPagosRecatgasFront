@@ -6,13 +6,13 @@ import RoutesApp from './Routes/RoutesApp';
 import { AppBar, Toolbar } from '@mui/material';
 
 function App() {
-  return (
+    return (
     <div className="App">
 
-      <AppBar position='static'><Toolbar>Luyten Services</Toolbar></AppBar>
-      <RoutesApp/>
+        <AppBar position='static'><Toolbar>Luyten Services</Toolbar></AppBar>
+        <RoutesApp/>
     </div>
-  );
+    );
 }
 
 export default App;
